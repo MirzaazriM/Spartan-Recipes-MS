@@ -1,0 +1,13 @@
+services:
+
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+
+    Model\Mapper\RecepiesMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\RecepiesMapper'
+
